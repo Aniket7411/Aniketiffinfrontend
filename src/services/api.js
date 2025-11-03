@@ -127,6 +127,12 @@ export const kycAPI = {
 
     // Get KYC Status
     getStatus: () => api.get('/kyc/status'),
+
+    // Get KYC Documents
+    getDocuments: () => api.get('/kyc/documents'),
+
+    // Delete KYC Document
+    deleteDocument: (docType) => api.delete(`/kyc/document/${docType}`),
 };
 
 // ==================== ADMIN ENDPOINTS ====================
